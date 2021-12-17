@@ -15,9 +15,9 @@ func main() {
 }
 
 func homePage(writer http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(writer, "Homepage in daily")
+	fmt.Fprintf(writer, "Homepage in daily but it's number two")
 }
 
 func aboutUs(writer http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(writer, "About us in daily")
+	fmt.Fprintf(writer, "About us in daily but it's number two")
 }
