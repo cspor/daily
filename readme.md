@@ -37,17 +37,24 @@ CMD ["/app/main"]
 `docker build -t daily .`
 
 Show all images on our Docker installation
+
 `docker images`
 
-Run it locally, opening the http port #2 you used in your go app to the world on port #1
-`docker run -d -p 3000:3000 daily`                 <-- detached
+Run it locally, exposing port #1 to the world to the #2 TCP port that you used in your app
+
+`docker run -d -p 3000:3000 daily`  <-- detached
 
 To kill a process
+
 `docker ps`
+
 `docker kill [Container ID]`
 
 ### On DO console:
-`git clone https://github.com/user/project app   `       <-- same folder as above in Dockerfile
+`git clone https://github.com/user/project.git app`       <-- same folder as above in Dockerfile
+
 `cd app`
+
 `docker build -t daily .`
+
 `docker run -d -p 3000:3000 daily`
